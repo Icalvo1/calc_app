@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
 var princ = 0;
 var years = 0;
 var rate = 0;
@@ -43,18 +44,22 @@ var cycle = 0;
 
 $("#button").click(function(event){
 		event.preventDefault();
-		var $principal = parseFloat($("#principal").val());
-		var $years = parseFloat($("#years").val());
+		var $principal = parseInt($("#principal").val());
+		console.log($principal);
+		var $years = parseInt($("#years").val());
+		console.log($years);
+		var $cycles = parseInt($("#cycles").val());
+		console.log($cycles);
 		var $intrate = parseFloat(($("#int-rate").val())/100);
-		var $cycles = parseFloat($("#cycles").val());
+		console.log($intrate);
+
 		//var $answer = $principal * (1 + $intrate/$cycles);
-		var $ansfinal = parseInt(Math.pow($principal * (1 + $intrate/$cycles), ($cycles * $years)));
+		var $ansfinal = parseInt($principal * (Math.pow((1 + $intrate/$cycles), ($cycles) * ($years))));
 		$("<div>").append($ansfinal).appendTo('#append');
 	}); 
 $("#clear").click(function(event){
 		event.preventDefault();
 		$("#append").empty();
-
 });
 
 	

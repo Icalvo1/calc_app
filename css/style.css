@@ -1,79 +1,13 @@
-body, header, footer	{
-
-background: black;
-color: white;
-
-}
-
-input		{
-	
-	color: #D46A6A;
-}
-
-form		{
-
-text-align: center;
+#main-heading {
+	text-align: center;
+	font-size: 40px;
 
 }
 
-@media (min-width: 720px) and (max-width: 1200px) || (min-width: 760px) { 
+#append{
+	margin-top: 2em;
+}
 
-	html, body, div, span, applet, object, iframe,
- p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, 
-center,
-
- form, label,
-
- 
-figure, figcaption, footer, header, 
-
-{
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-	}
-
-	.princ,
-.intr,
-.rate,
-.cycle	{
-	
-		margin-right: 30%;
-	
-		}
-	.calc	{
-	
-	width: 50%;
-    margin: 0 auto;
-	
-	
-	}
-	
-	}
-	
-	@media (min-width: 981px)	{
-	
-	.princ,
-	.intr,
-	.rate,
-	.cycle{
-	
-		margin-right: 30%;
-	
-	}
-	
-	}
-.calc	{
-	width: 50%;
-    margin: 0 auto;
-	
-	
-	}
-	}
-	
+.btn {
+	margin-right:15px;
+}

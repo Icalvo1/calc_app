@@ -1,0 +1,8 @@
+Advanced Custom Fields
+	-cuztomise wordpress edit screens
+
+custom post type ui
+	-admin panel for creating custom post types
+
+genesis eNews extended
+	-widget for opt-in form
